@@ -1,0 +1,45 @@
+name: 'Bug report'
+description: Create a report to help us improve
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting an issue with [codinit.dev](https://codinit.dev)!
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug and what you expected to happen.
+      placeholder: |
+        **Bug:** The app crashes when I...
+        **Expected:** It should...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser, OS, Provider/Model used (if relevant)
+      placeholder: |
+        - Browser: Chrome 120
+        - OS: macOS 14
+        - Provider: OpenAI
+        - Model: GPT-4
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Screenshots, links, or any other helpful information
